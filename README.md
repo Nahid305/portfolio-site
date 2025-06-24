@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website showcasing my projects, skills, and contact details. This portfolio reflects my journey as an AI & Data Science Engineer.
 
-🌐 Live Demo  (Replace with your actual deployed link)
+🌐 Live Demo  (https://nahid305.github.io/portfolio-site/)
 
 🎯 Features:
 
