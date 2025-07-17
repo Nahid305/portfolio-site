@@ -666,7 +666,8 @@ img {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  opacity: 0;
+  opacity: 1; /* Changed from 0 to 1 for immediate visibility */
+  transform: translateY(0); /* Reset transform */
 }
 
 .name {
@@ -674,7 +675,8 @@ img {
   margin-bottom: 1rem;
   line-height: 1.1;
   font-weight: 800;
-  opacity: 0;
+  opacity: 1; /* Changed from 0 to 1 for immediate visibility */
+  transform: translateY(0); /* Reset transform */
   text-transform: uppercase;
 }
 
@@ -687,7 +689,8 @@ img {
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: var(--text-light);
-  opacity: 0;
+  opacity: 1; /* Changed from 0 to 1 for immediate visibility */
+  transform: translateY(0); /* Reset transform */
 }
 
 .typing-text {
@@ -714,14 +717,16 @@ img {
   color: var(--text-light);
   margin-bottom: 2rem;
   max-width: 500px;
-  opacity: 0;
+  opacity: 1; /* Changed from 0 to 1 for immediate visibility */
+  transform: translateY(0); /* Reset transform */
 }
 
 .hero-btns {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  opacity: 0;
+  opacity: 1; /* Changed from 0 to 1 for immediate visibility */
+  transform: translateY(0); /* Reset transform */
 }
 
 .btn.floating {
@@ -745,6 +750,24 @@ img {
 
 .btn.floating:hover .hover-effect {
   transform: translateY(0);
+}
+
+/* Hero Image */
+.hero-img {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.img-container {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  opacity: 1; /* Changed from 0 to 1 for immediate visibility */
+  transform: translateY(0); /* Reset transform */
 }
 
 /* Profile Image */
