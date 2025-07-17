@@ -6,6 +6,7 @@
   <title>Nahid Ansari | AI Engineer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
@@ -103,121 +104,190 @@
       
       <div class="skills-grid">
         <!-- Programming & Data Card -->
-        <div class="skill-category-card">
-          <h3 class="category-title">Programming & Data</h3>
+        <div class="skill-category-card" data-category="programming">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="category-title">Programming & Data</h3>
+          </div>
           <div class="skills-subgrid">
-            <div class="skill-item">
+            <div class="skill-item" data-skill="python">
               <div class="skill-icon">
                 <i class="devicon-python-plain colored"></i>
               </div>
-              <span>Python</span>
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <div class="skill-level expert"></div>
+              </div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="pandas">
               <div class="skill-icon">
                 <i class="devicon-pandas-plain colored"></i>
               </div>
-              <span>Data Cleaning</span>
+              <div class="skill-info">
+                <span class="skill-name">Data Cleaning</span>
+                <div class="skill-level expert"></div>
+              </div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="powerbi">
               <div class="skill-icon">
                 <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI" class="custom-icon">
               </div>
-              <span>Power BI</span>
-            </div>
-            <div class="skill-item">
-              <div class="skill-icon">
-                <i class="devicon-python-plain colored"></i>
+              <div class="skill-info">
+                <span class="skill-name">Power BI</span>
+                <div class="skill-level intermediate"></div>
               </div>
-              <span>Python Libraries</span>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="libraries">
+              <div class="skill-icon">
+                <i class="devicon-numpy-original colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Python Libraries</span>
+                <div class="skill-level expert"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="datascience">
               <div class="skill-icon">
                 <i class="devicon-jupyter-plain colored"></i>
               </div>
-              <span>Data Science</span>
-            </div>
-            <div class="skill-item">
-              <div class="skill-icon">
-                <svg class="custom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46L6 10.72 4.54 8.27H2.4l2.34 3.8-2.38 3.87h2.14z" fill="#217346"/>
-                </svg>
+              <div class="skill-info">
+                <span class="skill-name">Data Science</span>
+                <div class="skill-level intermediate"></div>
               </div>
-              <span>Microsoft Excel</span>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="excel">
               <div class="skill-icon">
-                <svg class="custom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2a10 10 0 0 0-10 10c0 1.13.19 2.21.54 3.2l-1.54 4.05 4.14-1.5c1.3.72 2.8 1.15 4.36 1.15 5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.29 0-2.53-.32-3.62-.89l-2.33.68.7-2.32C5.45 15.1 5 13.55 5 12c0-3.86 3.14-7 7-7s7 3.14 7 7-3.14 7-7 7z" fill="#4285F4"/>
-                  <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="#34A853"/>
-                </svg>
+                <i class="fas fa-file-excel" style="color: #217346;"></i>
               </div>
-              <span>Web Scraping</span>
+              <div class="skill-info">
+                <span class="skill-name">Microsoft Excel</span>
+                <div class="skill-level expert"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="webscraping">
+              <div class="skill-icon">
+                <i class="fas fa-spider" style="color: #FF6B35;"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Web Scraping</span>
+                <div class="skill-level intermediate"></div>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- Databases & Cloud Card -->
-        <div class="skill-category-card">
-          <h3 class="category-title">Databases & Cloud</h3>
-          <div class="skills-subgrid">
-            <div class="skill-item">
-              <div class="skill-icon">
-                <i class="fas fa-database"></i>
-              </div>
-              <span>DBMS</span>
+        <div class="skill-category-card" data-category="database">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-database"></i>
             </div>
-            <div class="skill-item">
+            <h3 class="category-title">Databases & Cloud</h3>
+          </div>
+          <div class="skills-subgrid">
+            <div class="skill-item" data-skill="dbms">
+              <div class="skill-icon">
+                <i class="fas fa-server" style="color: #336791;"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">DBMS</span>
+                <div class="skill-level intermediate"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-skill="sqlite">
               <div class="skill-icon">
                 <i class="devicon-sqlite-plain colored"></i>
               </div>
-              <span>SQLite</span>
+              <div class="skill-info">
+                <span class="skill-name">SQLite</span>
+                <div class="skill-level expert"></div>
+              </div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="mysql">
               <div class="skill-icon">
                 <i class="devicon-mysql-plain colored"></i>
               </div>
-              <span>SQL</span>
+              <div class="skill-info">
+                <span class="skill-name">SQL</span>
+                <div class="skill-level intermediate"></div>
+              </div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="aws">
               <div class="skill-icon">
                 <i class="devicon-amazonwebservices-plain colored"></i>
               </div>
-              <span>AWS Cloud</span>
+              <div class="skill-info">
+                <span class="skill-name">AWS Cloud</span>
+                <div class="skill-level beginner"></div>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- Emerging Tech Card -->
-        <div class="skill-category-card">
-          <h3 class="category-title">Other Skills</h3>
+        <div class="skill-category-card" data-category="emerging">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 class="category-title">Emerging Technologies</h3>
+          </div>
           <div class="skills-subgrid">
-            <div class="skill-item">
+            <div class="skill-item" data-skill="bot">
               <div class="skill-icon">
-                <i class="fas fa-robot"></i>
+                <i class="fas fa-robot" style="color: #4285F4;"></i>
               </div>
-              <span>Bot Development</span>
+              <div class="skill-info">
+                <span class="skill-name">Bot Development</span>
+                <div class="skill-level intermediate"></div>
+              </div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="prompt">
               <div class="skill-icon">
-                <svg class="custom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 3a9 9 0 0 0-9 9c0 1.42.36 2.76 1 3.96l-1.5 3.96 4.14-1.5A8.96 8.96 0 0 0 12 21a9 9 0 0 0 9-9 9 9 0 0 0-9-9zm0 16c-1.83 0-3.53-.5-5-1.35l-3.55 1.29 1.29-3.55C5.5 15.53 5 13.83 5 12c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7zm-1-9h2v2h-2zm0-4h2v6h-2z" fill="#34A853"/>
-                </svg>
+                <i class="fas fa-comments" style="color: #34A853;"></i>
               </div>
-              <span>Prompt Engineering</span>
+              <div class="skill-info">
+                <span class="skill-name">Prompt Engineering</span>
+                <div class="skill-level expert"></div>
+              </div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="ai">
               <div class="skill-icon">
-                <img src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="Generative AI" class="custom-icon">
+                <i class="fas fa-magic" style="color: #FF6B35;"></i>
               </div>
-              <span>Generative AI</span>
+              <div class="skill-info">
+                <span class="skill-name">Generative AI</span>
+                <div class="skill-level intermediate"></div>
+              </div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-skill="git">
               <div class="skill-icon">
                 <i class="devicon-git-plain colored"></i>
               </div>
-              <span>Git Version Control</span>
+              <div class="skill-info">
+                <span class="skill-name">Git Version Control</span>
+                <div class="skill-level expert"></div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      
+      <!-- Skill Level Legend -->
+      <div class="skill-level-legend">
+        <div class="legend-item">
+          <div class="level-dot expert"></div>
+          <span>Expert</span>
+        </div>
+        <div class="legend-item">
+          <div class="level-dot intermediate"></div>
+          <span>Intermediate</span>
+        </div>
+        <div class="legend-item">
+          <div class="level-dot beginner"></div>
+          <span>Beginner</span>
         </div>
       </div>
     </div>
