@@ -590,18 +590,21 @@ img {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: auto;
-    min-height: calc(100vh - 60px);
-    padding-top: 80px;
-    padding-bottom: 40px;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    min-height: calc(100vh - 40px);
-    padding-top: 70px;
-    padding-bottom: 30px;
+    min-height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -715,6 +718,8 @@ img {
   .hero-content {
     padding: 0 15px;
     gap: 25px;
+    min-height: auto;
+    justify-content: center;
   }
 }
 
@@ -722,6 +727,8 @@ img {
   .hero-content {
     padding: 0 10px;
     gap: 20px;
+    min-height: auto;
+    justify-content: center;
   }
 }
 
@@ -739,9 +746,19 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-text {
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-text {
     min-width: auto;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -1789,6 +1806,21 @@ img {
   border: 1px solid var(--border-color);
   z-index: 1;
   position: relative;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-icon {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .skill-icon i,
@@ -1796,6 +1828,66 @@ img {
   font-size: 1.5rem;
   width: 24px;
   height: 24px;
+}
+
+/* Specific styling for custom icons in skills */
+.skill-item .custom-icon {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px;
+  max-height: 24px;
+  object-fit: contain;
+}
+
+.skill-item svg.custom-icon {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.skill-item img.custom-icon {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px;
+  max-height: 24px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .skill-icon i,
+  .skill-icon .custom-icon {
+    font-size: 1.3rem;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .skill-item .custom-icon,
+  .skill-item svg.custom-icon,
+  .skill-item img.custom-icon {
+    width: 20px !important;
+    height: 20px !important;
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-icon i,
+  .skill-icon .custom-icon {
+    font-size: 1.2rem;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .skill-item .custom-icon,
+  .skill-item svg.custom-icon,
+  .skill-item img.custom-icon {
+    width: 18px !important;
+    height: 18px !important;
+    max-width: 18px;
+    max-height: 18px;
+  }
 }
 
 .skill-info {
