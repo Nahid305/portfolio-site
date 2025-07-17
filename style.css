@@ -763,8 +763,8 @@ img {
 }
 
 .img-container {
-  width: 350px;
-  height: 350px;
+  width: 280px;
+  height: 280px;
   position: relative;
   opacity: 1; /* Changed from 0 to 1 for immediate visibility */
   transform: translateY(0); /* Reset transform */
@@ -2060,6 +2060,14 @@ img {
   .img-container {
     width: 250px;
     height: 250px;
+  }
+}
+
+/* Laptop View - Larger screens */
+@media (min-width: 1025px) {
+  .img-container {
+    width: 350px;
+    height: 350px;
   }
 }
 
